@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const BookmarkScreen = () => {
+const ForgotPasswordScreen = () => {
   return (
     <View>
-      <Text>BookmarkScreen</Text>
+      <Text>ForgotPasswordScreen</Text>
     </View>
   )
 }
 
-export default BookmarkScreen
+export default ForgotPasswordScreen
 
 const styles = StyleSheet.create({})

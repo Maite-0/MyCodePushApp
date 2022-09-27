@@ -1,19 +1,15 @@
-import { StyleSheet, TextInput, Text, Button, View } from 'react-native'
+import { StyleSheet, TextInput, Text, Button, View, Alert } from 'react-native'
 import React from 'react'
+import { Image } from 'react-native'
 
 const HomeScreen = ({ navigation }) => {
 
-    const handleSubmit = () => {
-        navigation.navigate("About");
-    }
     return (
         <View>
-            <Text>HomeScreen</Text>
-            <Button title="Press" onPress={() => handleSubmit()} />
+            <Text style={{ fontSize: 30, color: 'black' }}>HomeScreen</Text>
+            {/* <Image style={{ justifyContent: "center" }} source={require('./../../assets/taxi.png')} /> */}
         </View>
     )
 }
 
 export default HomeScreen
-
-const styles = StyleSheet.create({})

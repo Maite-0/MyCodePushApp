@@ -1,4 +1,4 @@
-import { View, Button, Text } from 'react-native'
+import { View, Button, Text, Image } from 'react-native'
 import React from 'react'
 
 const AboutScreen = ({ navigation }) => {
@@ -7,8 +7,11 @@ const AboutScreen = ({ navigation }) => {
     }
     return (
         <View>
-            <Text>AboutScreen</Text>
-            <Button title="Press" onPress={() => handleSubmit()} />
+            <View style={{ alignItems: 'center' }}>
+                <Text>AboutScreen</Text>
+                <Image style={{ justifyContent: "center" }} source={require('./../../assets/taxi.png')} />
+            </View>
+            {/* <Button title="Press" onPress={() => handleSubmit()} /> */}
         </View>
     )
 }

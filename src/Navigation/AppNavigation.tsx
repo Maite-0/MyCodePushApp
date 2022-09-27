@@ -4,9 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../Screens/HomeScreen';
 import AboutScreen from '../Screens/AboutScreen';
-import DetailsScreen from '../Screens/DetailsScreen';
 import LoginScreen from '../Screens/LoginScreen';
-import BookmarkScreen from '../Screens/BookmarkScreen';
+import ForgotPasswordScreen from '../Screens/ForgotPasswordScreen';
 
 const Stack = createNativeStackNavigator();
 const AppNavigation = () => {
@@ -14,10 +13,9 @@ const AppNavigation = () => {
    <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false,}}>
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="About" component={AboutScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
-        <Stack.Screen name="BookmarkScreen" component={BookmarkScreen} />
+        <Stack.Screen name="ForgotPasswordScreen" component={ForgotPasswordScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
