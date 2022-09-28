@@ -17,11 +17,11 @@ const Login = ({ navigation }: { navigation: any }) => {
     useEffect(() => { SplashScreen.hide(); })
 
     const loginHandle = () => {
-        //navigation.navigate('HomeScreen' as never);
+       // navigation.navigate('HomeScreen' as never);
     };
 
     const onForgot = () => {
-        //navigation.navigate('ForgotPasswordScreen' as never);
+      // navigation.navigate('ForgotPasswordScreen' as never);
     };
 
     return (
@@ -51,14 +51,14 @@ const Login = ({ navigation }: { navigation: any }) => {
                 </TouchableOpacity>
             </View>
 
-            <View style={styles.LoginFilledButton}>
+            {/* <View style={styles.LoginFilledButton}>
                 <FilledButton
                     title="Login"
                     onPress={() => {
                         loginHandle();
                     }}
                 />
-            </View>
+            </View> */}
         </KeyboardAvoidingView>
     );
 };
